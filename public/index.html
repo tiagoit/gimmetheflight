@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gimme the Flights</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+  </head>
+
+  <body>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <!-- <h3 class="masthead-brand">Gimme the Flights</h3> -->
+          <nav class="nav nav-masthead justify-content-center">
+            <!-- <a class="nav-link active" href="/">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Contact</a> -->
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover text-center">
+        <!-- <h1 class="cover-heading">Cover your page.</h1> -->
+        
+        <div class="row">
+          <div class="col-6 pr-1">
+            <select class="custom-select">
+              <option selected>Origin</option>
+              <option value="1">Porto Seguro - BPS</option>
+              <option value="2">Belo Horizonte - Any</option>
+              <option value="3">Belo Horizonte - CNF</option>
+            </select>
+          </div>
+          <div class="col-6 pl-1">
+            <select class="custom-select">
+              <option selected>Destination</option>
+              <option value="1">Porto Seguro - BPS</option>
+              <option value="2">Belo Horizonte - Any</option>
+              <option value="3">Belo Horizonte - CNF</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row lead mt-5">
+          <div class="col-12">
+              I want to stay
+              <select class="ml-2 custom-select stay-type" name="stay-type">
+                <option value="1" selected>around</option>
+                <option value="2">exactly</option>
+              </select>
+              <input type="number" class="mx-2 form-control stay-days">
+              days
+          </div>
+        </div>
+
+        <div class="row lead mt-5">
+          <div class="col-12">
+              I want to departure
+              <select class="ml-2 custom-select stay-type" name="departure-type">
+                <option value="1" selected>between</option>
+                <option value="2">at</option>
+              </select>
+              <input type="date" class="mx-2 form-control departure-date">
+              and
+              <input type="date" class="mx-2 form-control departure-date">
+              
+          </div>
+        </div>
+
+        <div class="row lead mt-5">
+          <div class="col-12">
+            <input type="email" class="mx-auto form-control email" placeholder="Email">
+          </div>
+        </div>
+
+        <!-- <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p> -->
+        
+        <p class="lead mt-5">
+          <a href="#" class="btn btn-lg btn-secondary">Gimme the cheapest flights</a>
+        </p>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Contact <a href="https://getbootstrap.com/">Tiago Ferreira (ferreiratty)</a></p>
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>
+
